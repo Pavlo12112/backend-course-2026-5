@@ -1,0 +1,14 @@
+Запуск:
+npx nodemon index.js -H localhost -p 3000 -c cache
+
+GET manager:
+curl http://localhost:3000/101
+
+GET cat:
+curl http://localhost:3000/404 --output cat.jpg
+
+PUT:
+curl -X PUT --data-binary @cat.jpg http://localhost:3000/500
+
+DELETE:
+curl -X DELETE http://localhost:3000/500
